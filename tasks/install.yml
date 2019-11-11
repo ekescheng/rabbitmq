@@ -17,6 +17,7 @@
   - gtk2-devel
   - binutils-devel
   - perl
+  - net-tools
 - name: install socat
   yum: name=/opt/socat-1.7.3.2-2.el7.x86_64.rpm state=present
 - name: install erlang
