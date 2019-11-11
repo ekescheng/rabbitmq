@@ -1,5 +1,6 @@
+---
 - name: copy erlang.cookie
   copy: src=/opt/software/.erlang.cookie dest=/var/lib/rabbitmq
-- name: restart rabbitmq 
+- name: restartrabbitmq 
   command: sh /opt/restartrabbitmq.sh
   changed_when: "true"

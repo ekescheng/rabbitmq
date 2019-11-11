@@ -12,5 +12,6 @@
   copy: src=/opt/software/rabbitinit.sh dest=/opt/ owner=root group=root
 - name: copy restartrabbitmq.sh
   copy: src=/opt/software/restartrabbitmq.sh dest=/opt/ owner=root group=root
-- name: copy hosts
-  copy: src=/opt/software/hosts dest=/etc/ owner=root group=root
+- name: copy rabbitcluster.sh
+  copy: src=/opt/software/rabbitcluster.sh dest=/opt/ owner=root group=root
+
