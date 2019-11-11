@@ -12,4 +12,3 @@
   copy: src=/opt/software/rabbitinit.sh dest=/opt/ owner=root group=root
 - name: copy restartrabbitmq.sh
   copy: src=/opt/software/restartrabbitmq.sh dest=/opt/ owner=root group=root
-

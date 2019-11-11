@@ -30,3 +30,5 @@
 - name: config rabbitmq
   command: sh /opt/rabbitinit.sh
   changed_when: "true"
+  args:
+    warn: false
