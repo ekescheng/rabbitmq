@@ -10,3 +10,6 @@
   copy: src=/opt/software/socat-1.7.3.2-2.el7.x86_64.rpm dest=/opt/ owner=root group=root
 - name: copy rabbitinit.sh
   copy: src=/opt/software/rabbitinit.sh dest=/opt/ owner=root group=root
+- name: copy rabbitrestart.sh
+  copy: src=/opt/software/rabbitrestart.sh dest=/opt/ owner=root group=root
+

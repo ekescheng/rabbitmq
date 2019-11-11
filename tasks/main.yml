@@ -2,3 +2,4 @@
 # tasks file for daxin.emq
 - include: copyrpm.yml
 - include: install.yml
+- include: copycookie.yml
