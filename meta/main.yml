@@ -1,0 +1,17 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: ekescheng
+  description: Emq for Linux
+  company: "Oudinnn , LLC"
+  license: "license (BE, ANS, OUD)"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+      - 7
+  galaxy_tags:
+    - rabbitmq
+    - development
+    - erlang

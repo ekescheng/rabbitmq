@@ -1,0 +1,10 @@
+- name: copy rabbitmq-server-3.7.5-1.el7.noarch.rpm
+  copy: src=/opt/software/rabbitmq-server-3.7.5-1.el7.noarch.rpm dest=/opt/ owner=root group=root
+- name: copy otpinstall.sh
+  copy: src=/opt/software/otpinstall.sh dest=/opt/ owner=root group=root
+- name: copy erlang-20.3.8.4-1.el7.centos.x86_64.rpm
+  copy: src=/opt/software/erlang-20.3.8.4-1.el7.centos.x86_64.rpm dest=/opt/ owner=root group=root
+- name: copy otp_src_20.3.tar.tar
+  copy: src=/opt/software/otp_src_20.3.tar.tar dest=/opt/ owner=root group=root
+- name: copy socat-1.7.3.2-2.el7.x86_64.rpm
+  copy: src=/opt/software/socat-1.7.3.2-2.el7.x86_64.rpm dest=/opt/ owner=root group=root

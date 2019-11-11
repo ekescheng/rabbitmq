@@ -1,0 +1,4 @@
+---
+# handlers file for daxin.rabbitmq
+- name: restart rabbitmq
+#  service: name=emqttd enabled=yes state=restarted

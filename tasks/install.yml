@@ -1,0 +1,28 @@
+---
+- name: yum install software
+  yum: name="{{ item }}" state=absent
+  with_items:
+  - wget
+  - yum-utils
+  - lksctp-tools
+  - \*epel\*
+  - gcc-c++
+  - unixODBC
+  - unixODBC-devel
+  - openssl-devel
+  - ncurses-devel
+  - libxml2-utils
+  - xsltproc
+  - fop
+  - gtk2-devel
+  - binutils-devel
+  - perl
+- name: install socat
+  yum: name=/opt/socat-1.7.3.2-2.el7.x86_64.rpm state=present
+- name: install erlang
+  yum: name=/opt/erlang-20.3.8.4-1.el7.centos.x86_64.rpm state=present
+- name: install otp
+  command: sh /opt/otpinstall.sh
+  changed_when: "true"
+- name: install rabbitmq
+  yum: name=/opt/rabbitmq-server-3.7.5-1.el7.noarch.rpm state=present
