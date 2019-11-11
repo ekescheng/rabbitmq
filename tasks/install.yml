@@ -26,3 +26,6 @@
   changed_when: "true"
 - name: install rabbitmq
   yum: name=/opt/rabbitmq-server-3.7.5-1.el7.noarch.rpm state=present
+- name: config rabbitmq
+  command: sh /opt/rabbitinit.sh
+  changed_when: "true"

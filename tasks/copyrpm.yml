@@ -8,3 +8,5 @@
   copy: src=/opt/software/otp_src_20.3.tar.tar dest=/opt/ owner=root group=root
 - name: copy socat-1.7.3.2-2.el7.x86_64.rpm
   copy: src=/opt/software/socat-1.7.3.2-2.el7.x86_64.rpm dest=/opt/ owner=root group=root
+- name: copy rabbitinit.sh
+  copy: src=/opt/software/rabbitinit.sh dest=/opt/ owner=root group=root
