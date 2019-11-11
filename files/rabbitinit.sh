@@ -14,6 +14,7 @@ rabbitmqctl set_permissions -p saicgormq saicgormqmonitor "" "" ".*"
 rabbitmqctl delete_user guest
 rm -rf /var/lib/rabbitmq/.erlang.cookie
 echo "vxZhJUa95q1+W5xTuJO/xA==" > /var/lib/rabbitmq/.erlang.cookie
+chown -R rabbitmq:rabbitmq /var/lib/rabbitmq
 sleep 1
 rabbitmqctl stop
 sleep 3
